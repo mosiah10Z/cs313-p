@@ -1,0 +1,42 @@
+#one {
+    text-align: center;
+    color: red;
+	background-color: black;
+	font-size: 50px;
+}
+
+#one:hover { 
+    text-align: center;
+    color: red;
+	background-color: black;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#two {
+    text-align: center;
+    color: red;
+	background-color: red;
+	font-size: 30px
+}
+#two:hover { 
+    text-align: center;
+    color: red;
+	background-color: red;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#three {
+    text-align: center;
+    color: red;
+	background-color: lightblue;
+	font-size: 40px;
+}
+#three:hover { 
+    text-align: center;
+    color: red;
+	background-color: lightblue;
+	font-size: 50px;
+	font-weight: bold;
+}
