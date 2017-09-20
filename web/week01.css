@@ -5,24 +5,17 @@
 	font-size: 50px;
 }
 
-#one:hover { 
-    text-align: center;
-    color: red;
-	background-color: black;
-	font-size: 50px;
-	font-weight: bold;
-}
 
 #two {
     text-align: center;
     color: red;
-	background-color: red;
+	background-color: #ffe7dc;
 	font-size: 30px
 }
 #two:hover { 
     text-align: center;
     color: red;
-	background-color: red;
+	background-color: #ffe7dc;
 	font-size: 50px;
 	font-weight: bold;
 }
