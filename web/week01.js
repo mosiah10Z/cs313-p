@@ -1,25 +1,9 @@
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Clicked";
+// ta02.js
+function clickMe() {
+	alert("Clicked!");
 }
 
-function changeCeolor() {
-	var x = document.getElementById("input").value;
-	document.getElementById("one").style.backgroundColor = '"' + x + '"';
-	console.log(x);
-}
-
-function changeColor() {
-	var textbox_id = "input";
-	var textbox = document.getElementById(textbox_id);
-
-	var div_id = "two";
-	var div = document.getElementById(div_id);
-
-	// We should verify values here before we use them...
-	var color = textbox.value;
-	div.style.backgroundColor = color;
-	
-	
+function changeCoelor() {
 	var textbox_id = "txtColor";
 	var textbox = document.getElementById(textbox_id);
 
@@ -30,4 +14,10 @@ function changeColor() {
 	var color = textbox.value;
 	div.style.backgroundColor = color;
 
+}
+
+function changeColor() {
+	var x = document.getElementById("txtColor").value;
+	document.getElementById("div1").style.backgroundColor = x;
+	console.log(x);
 }

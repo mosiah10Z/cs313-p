@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE bsa SYSTEM "BSA.dtd">
+<bsa>
+<council name="The Council of Elrond">
+    <troop troopNumber="1" unitName="Man">
+        <scout>
+            <firstName>Aragorn</firstName>
+            <lastName>Son of Arathorn</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Star</rank>
+            <meritBadge date-earned="10/10/16">First Aid</meritBadge>
+
+        </scout>
+        <scout>
+            <firstName>Boromir</firstName>
+            <lastName>Son of Denethor</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Star</rank>
+            <meritBadge date-earned="10/10/16">First Aid</meritBadge>
+
+        </scout>
+        <scout>
+            <firstName>Faramir</firstName>
+            <lastName>Son of Denethor</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Star</rank>
+            <meritBadge date-earned="10/10/16">First Aid</meritBadge>
+
+        </scout>
+
+    </troop>
+    <troop troopNumber="2" unitName="Elf">
+        <scout>
+            <firstName>Legolas</firstName>
+            <lastName>Thranduillion</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Eagle</rank>
+            <meritBadge date-earned="10/15/15">First Aid</meritBadge>
+
+        </scout>
+        <scout>
+            <firstName>Haldir</firstName>
+            <lastName>Lothlorien</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Star</rank>
+            <meritBadge date-earned="10/10/16">First Aid</meritBadge>
+
+        </scout>
+        <scout>
+            <firstName>Arwen</firstName>
+            <lastName>Undomiel</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Star</rank>
+            <meritBadge date-earned="10/10/16">First Aid</meritBadge>
+
+        </scout>
+
+    </troop>
+    <troop troopNumber="3" unitName="Dwarf">
+        <scout>
+            <firstName>Gimli</firstName>
+            <lastName>Son of Gloin</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Tenderfoot</rank>
+            <meritBadge date-earned="10/15/15">First Aid</meritBadge>
+
+        </scout>
+        <scout>
+            <firstName>Thorin</firstName>
+            <lastName>Son of Thrain</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Star</rank>
+            <meritBadge date-earned="10/10/16">First Aid</meritBadge>
+
+        </scout>
+        <scout>
+            <firstName>Gloin</firstName>
+            <lastName>Son of Groin</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Star</rank>
+            <meritBadge date-earned="10/10/16">First Aid</meritBadge>
+
+        </scout>
+
+    </troop>
+
+</council>
+</bsa>

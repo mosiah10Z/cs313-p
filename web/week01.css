@@ -1,35 +1,22 @@
-#one {
-    text-align: center;
-    color: red;
-	background-color: black;
-	font-size: 50px;
+/* ta02.css */
+
+.div-first {
+	background-color: #00BCD4;
+	font-size: 2em;
 }
 
-
-#two {
-    text-align: center;
-    color: red;
-	background-color: #ffe7dc;
-	font-size: 30px
-}
-#two:hover { 
-    text-align: center;
-    color: red;
-	background-color: #ffe7dc;
-	font-size: 50px;
-	font-weight: bold;
+.div-later {
+	font-size: 0.7em;
 }
 
-#three {
-    text-align: center;
-    color: red;
-	background-color: lightblue;
-	font-size: 40px;
+#div2 {
+	background-color: #4DD0E1;
 }
-#three:hover { 
-    text-align: center;
-    color: red;
-	background-color: lightblue;
-	font-size: 50px;
+
+#div3 {
+	background-color: #B2EBF2;
+}
+
+.hover-bold:hover {
 	font-weight: bold;
 }

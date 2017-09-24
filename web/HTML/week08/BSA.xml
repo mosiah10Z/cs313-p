@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bsa SYSTEM "BSA.dtd">
+<bsa>
+<council name="ONE">
+    <troop troopNumber="1" unitName="Beastly">
+        <scout>
+            <firstName>John</firstName>
+            <lastName>Doe</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Star</rank>
+            <meritBadge date-earned="10/10/16">First Aid</meritBadge>
+
+        </scout>
+
+    </troop>
+    <troop troopNumber="2" unitName="Beastbrook">
+        <scout>
+            <firstName>John</firstName>
+            <lastName>Dean</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Eagle</rank>
+            <meritBadge date-earned="10/15/15">First Aid</meritBadge>
+
+        </scout>
+
+    </troop>
+    <troop troopNumber="3" unitName="Beasty">
+        <scout>
+            <firstName>John</firstName>
+            <lastName>Drooe</lastName>
+            <address>
+                <street>10 Cloverfield Lane</street>
+                <city>Austin</city>
+                <state>Texas</state>
+
+            </address>
+            <phone>2083312216</phone>
+            <rank date-earned="10/15/15">Tenderfoot</rank>
+            <meritBadge date-earned="10/15/15">First Aid</meritBadge>
+
+        </scout>
+
+    </troop>
+
+</council>
+</bsa>

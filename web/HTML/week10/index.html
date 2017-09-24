@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>AJAX</title>
+    <style>
+       body {
+           background-color: cadetblue;
+           margin: auto;
+        }
+    
+        
+h1 {
+    color: palegreen;
+    background-color: white;
+    font-size: 4em;
+        text-align: center;
+}
+        #table {
+            background-color: aliceblue;
+            margin-top: 10px;
+            margin-left:auto; 
+    margin-right:auto;
+            font-family: sans-serif;
+            
+        }
+td {
+    padding: 10px 10px 10px 10px;
+}
+        p {
+            color: azure;
+        }
+
+
+#container {
+    
+    text-align: center;
+} 
+    </style>
+    <script>
+        function getCountry(x) {
+            if (x == "") {
+                document.getElementById("answer").innerHTML = "";
+                console.log("tell me");
+                return;
+            }
+            var country = new XMLHttpRequest();
+
+            country.onreadystatechange = function() {
+
+                console.log(country);
+                if (country.readyState == 4 && country.status == 200) {
+                    console.log("tell me");
+                    var z = country.responseText;
+
+                    console.log(country.responseText);
+                    console.log("telll me");
+                    var y = z.split(/[\n]+/);
+
+                    document.getElementById("answer").innerHTML = y[0] + "<br>" + y[1] + "<br>" + y[2] + "<br>" + y[3] + "<br>" + y[4] + "<br>" + y[5] + "<br>" + y[6] + "<br>" + y[7] + "<br>" + y[8] + "<br>" + y[9] + "<br>";
+
+                }
+            }
+
+            country.open("GET", x, true);
+            country.send();
+        }
+
+      function loadJ() {
+
+            var fileName = document.getElementById("fileName").value;
+            console.log(fileName);
+
+            
+
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function() {
+                if (ajax.readyState == 4 && ajax.status == 200) {
+                    var g = ajax.responseText;
+                    console.log(g);
+                    var obj = JSON.parse(g);
+                    var stuff = "<table id='table' border= '2'><th>Name</th><th>Address</th><th>Major</th><th>GPA</th><br>";
+                    for (i = 0; i < obj.students.length; i++)
+                        {
+                         stuff = stuff + "<tr><td>" + obj.students[i].first +" "+ obj.students[i].last + "</td><td>" +obj.students[i].address.city+", "+ obj.students[i].address.state+" "+ obj.students[i].address.zip+ "</td><td>"+obj.students[i].major
+        
+        
+        
+        
+        +"</td><td>" + obj.students[i].gpa + "</td></tr><br>";
+                            
+                        }
+                    document.getElementById("stupid").innerHTML = stuff;
+
+                };
+            }
+           ajax.open("GET", "../"+fileName, true);
+            ajax.send();
+        }
+
+
+        
+    </script>
+</head>
+
+<body>
+    <div><h1>AJAX</h1></div>
+    <div id="container">
+    <div id="one">
+        <select id="country" onchange="getCountry(this.value)">
+            <option value="">Pick a country!!!</option>
+            <option value="mexico.txt" id="mexico">Mexico</option>
+            <option value="canada.txt" id="canada">Canada</option>
+            <option value="usa.txt" id="usa">USA</option>
+            <option value="russia.txt" id="russia">Russia</option>
+        </select>
+
+
+    </div>
+    <p id="answer"></p>
+
+    <div id="two">
+        <input type="text" id="fileName" value="json.txt">
+        <button onclick="loadJ()">Load</button>
+        <div id="stupid">
+        </div>
+
+
+
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+html * {}
+body   {font-family: serif; font-size: 30px;margin-left: 200px; margin-right: 200px; margin-top: 100px;margin-bottom: 200px;background-color:aliceblue}
+
+div          {color:gray;}
+div.document {}
+div.title    {}
+div.content  {font-size: 20px; opacity: 0.9; font-kerning: normal}
+div#menuBar  {}
+div#text     {}
+div#sidebar  {}
+div#bottom   {}
+
+h1 {font-family: helvetica; color:darkgray; font-variant: small-caps;
+}
+h3 {}
+
+p {color:darkslategrey;}
+
+ul             {}
+ul#menuBarList {}
+li             {}
+li.menuBarItem {font-variant: small-caps; color:chocolate}
+
+.document    {border-color: aqua}
+.title       {}
+.content     {}
+.menuBarItem {}
+
+#menuBar     {}
+#menuBarList {}
+#text        {}
+#sidebar     {}
+#bottom      {}
