@@ -49,12 +49,12 @@ session_start();
         <div class="images">
             <div id="im" class="col-1-3">
                 <img src="20160614_180112.jpg" />
-                <label for="kendraazul">Kendra Azul</label>
+                <label for="kendraazul">Kendra</label>
                 <input type='checkbox' name="kendraazul" id="order-ka" value=1>
             </div>
             <div id="im" class="col-1-3">
                 <img src="20160621_225756.jpg" />
-                <label for="kendrasepia">Kendra Sepia</label>
+                <label for="kendrasepia">Sepia</label>
                 <input type='checkbox' name="kendrasepia" id="order-ks" value=1>
 
             </div>
@@ -67,7 +67,7 @@ session_start();
 
             <div id="im" class="col-1-3">
                 <img src="20160614_210809.jpg" />
-                <label for="dutchblonde">Dutch Blonde</label>
+                <label for="dutchblonde">Blonde</label>
                 <input type='checkbox' name="dutchblonde" id="order-db" value=1>
 
             </div>
@@ -87,9 +87,13 @@ session_start();
 
 
         </div>
-        <div style="text-align: center"><input id="submit" type="submit" value="Submit Answers"></div>
-
+        <div style="text-align: center"><input id="submit" type="submit" value="Add to Cart"><br></div>
+        <div style="text-align: center"><a href="purchaseReview.php">View Cart</a></div>
     </form>
+
+
+
+
 
     <?php
     $ka = $_POST["kendraazul"];
@@ -99,23 +103,39 @@ session_start();
     $p = $_POST["pensive"];
     $f = $_POST["frown"];
     
-    $_SESSION["ka"] += $ka;
-     $_SESSION["ks"] += $ks;
-     $_SESSION["m"] += $m;
-     $_SESSION["db"] += $db;
-     $_SESSION["p"] += $p;
-     $_SESSION["f"] += $f;
-    
-    
-  
+    $_SESSION["Kendra"] += $ka;
+     $_SESSION["Sepia"] += $ks;
+     $_SESSION["Milos"] += $m;
+     $_SESSION["Blonde"] += $db;
+     
+     $_SESSION["Frown"] += $f;
+    $_SESSION["Pensive"] += $p;
     
 
-echo "Session variables are set.";
-    print_r($_SESSION);
-    echo "<br>";
-     print_r($_POST);
+
+
+ //the cart 
+     echo "<div class='form1'>"; 
+    foreach ($_SESSION as $key => $value) { if ($value > 0) { echo "
+    <p>$key<br>" . "Quantity: " . "$value</p><br>"; } }
+    
+    
+    echo "</div>";
+
+    
+
+//echo "Session variables are set.";
+//    print_r($_SESSION);
+//    echo "<br>";
+//     print_r($_POST);
     
     ?>
+
+
+
+
+
+
 
 
 

@@ -87,6 +87,8 @@ h1 {
 
 .form1 {
     position: absolute;
+    top: 300px;
+    left: 16px;
     font-size: 1em;
     clear: both;
     padding: 10px 10px 10px 10px;
@@ -125,12 +127,12 @@ img {
 label {
     padding: 10px 10px 10px 10px;
 }
-
-input {
-    
-}
-
+input {}
 #submit {
     margin: 20px;
     text-align: center;
+}
+.list {
+    text-align: center;
+    font-size: 1em;
 }
