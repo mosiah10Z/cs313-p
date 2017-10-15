@@ -21,8 +21,10 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	// row, and we can access the different values based on their
 	// name
 	echo '<p>';
-	echo '<strong>' . $row['t1.title'] . ' ' . $row['t1.tutorial_text'] . ':';
-	echo $row['t2.first_name'] . '</strong>' . ' - ' . $row['t2.id'];
+	
+	echo '<strong>' . $row['title'] . '</strong> by ' . $row['first_name'] . '<br>';
+    
+    echo '<br>' . $row['tutorial_text'];
 	echo '</p>';
 }
 ?>
