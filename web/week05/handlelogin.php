@@ -1,6 +1,6 @@
 <?php
 echo "test";
-
+if (isset($_POST['submit'])) {
     include_once 'dbConnect.php';
     
     $db = get_db();
@@ -22,7 +22,7 @@ echo "test";
                     
                     
                     //insert to db
-                    $sql = "insert into public.user (first_name, last_name, username, password, display_name, role_id) values(:first, :last, :uid, :hashedPwd)";
+                    $sql = "insert into public.user (first_name, last_name, username, password, display_name, role_id) values(:first, :last, :uid, :hashedPwd, :dname, :roleid)";
                     $query = $db->prepare($sql);
                    
                     
@@ -30,9 +30,14 @@ echo "test";
                 $query->bindParam(':first', $first);
                 $query->bindParam(':last', $last);
                 $query->bindParam(':uid', $uid);
-                $query->bindParam(':password' $hashedPwd);
+                $query->bindParam(':password', $hashedPwd);
+    $query->bindParam(':dname', "Lame");
+    $query->bindParam(':roleid', 3);
                     $query->execute();
                     
                     header("Location: signup.php?signup=success");
     
     echo "done";
+                    
+    
+}
