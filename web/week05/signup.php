@@ -1,6 +1,5 @@
 <?php
-require "dbConnect.php";
-$db = get_db();
+
 include_once 'header.php';
 ?>
     <section class="main-container">
