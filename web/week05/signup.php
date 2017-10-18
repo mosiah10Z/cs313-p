@@ -1,11 +1,12 @@
 <?php
-
+require "dbConnect.php";
+$db = get_db();
 include_once 'header.php';
 ?>
     <section class="main-container">
         <div class="main-wrapper">
             <h2>Sign Up</h2>
-            <form class="signup-form">
+            <form class="signup-form" action="handlelogin.php" method="POST">
                 <input type="text" name="first" placeholder="Firstname">
                 <input type="text" name="last" placeholder="Lastname">
                 <input type="text" name="email" placeholder="E-mail">
