@@ -10,6 +10,8 @@ include_once 'header.php';
                 <input type="text" name="last" placeholder="Lastname">
                 <input type="text" name="email" placeholder="E-mail">
                 <input type="text" name="uid" placeholder="Username">
+                <input type="text" name="dname" placeholder="Display Name">
+                <input type="hidden" name="roleid" value=3>
                 <input type="password" name="pwd" placeholder="Password">
                 <button type="submit" name="submit">Sign up</button>
 
