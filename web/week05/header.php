@@ -23,12 +23,29 @@ session_start();
                     </ul>
                 </ul>
                 <div class="nav-login">
+                    <?php
+
+                    if (isset($_SESSION['id'])) {
+                        echo '<form action="handlelogout.php" method="post">
+                                            <button type="submit" name="submit">Logout</button>
+                                        </form>';
+                        Print_r ($_SESSION);
+                    }else {
+                        echo ' <form action="handlelogout.php" method="post">
+                        <button type="submit" name="submit">Logout</button>
+                    </form>
                     <form action="handlelogin.php" method="post">
                         <input type="text" name="uid" placeholder="Username/email">
                         <input type="password" name="pwd" placeholder="password">
                         <button type="submit" name="submit">Login</button>
                     </form>
-                    <a href="signup.php">Sign Up</a>
+                    <a href="signup.php">Sign Up</a>';
+                        Print_r ($_SESSION);
+                    }
+
+                    ?>
+
+
 
                 </div>
 
