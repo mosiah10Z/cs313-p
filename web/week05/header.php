@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -19,7 +23,7 @@
                     </ul>
                 </ul>
                 <div class="nav-login">
-                    <form>
+                    <form action="handlelogin.php" method="post">
                         <input type="text" name="uid" placeholder="Username/email">
                         <input type="password" name="pwd" placeholder="password">
                         <button type="submit" name="submit">Login</button>
