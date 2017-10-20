@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_POST['submit'])) {
-    include "dbConnect.php";
+    include_once "dbConnect.php";
     $db = get_db();
 
     $uid = $_POST['uid'];
