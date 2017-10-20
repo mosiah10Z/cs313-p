@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
 
         exit();
     }else {
-        $sql = "select * from public.user where username = :$uid";
+        $sql = "select * from public.user where username = :uid";
         $statement = $db->prepare($sql);
         $statement->execute (
             array(
