@@ -25,12 +25,7 @@ session_start();
                 <div class="nav-login">
                     <?php
 
-                    if (isset($_SESSION['id'])) {
-                        echo '<form action="handlelogout.php" method="post">
-                                            <button type="submit" name="submit">Logout</button>
-                                        </form>';
-                        //Print_r ($_SESSION);
-                    }else {
+                    if (!isset($_SESSION['uid'])) {
                         echo ' <form action="handlelogout.php" method="post">
                         <button type="submit" name="submit">Logout</button>
                     </form>
@@ -40,6 +35,13 @@ session_start();
                         <button type="submit" name="submit">Login</button>
                     </form>
                     <a href="signup.php">Sign Up</a>';
+                        //Print_r ($_SESSION);
+
+
+                    }else {
+                        echo '<form action="handlelogout.php" method="post">
+                                            <button type="submit" name="submit">Logout</button>
+                                        </form>';
                         //Print_r ($_SESSION);
                     }
 
