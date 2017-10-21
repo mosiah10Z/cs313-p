@@ -25,13 +25,9 @@ session_start();
                 <div class="nav-login">
                     <?php
 
-                    if (isset($_SESSION['uid'])) {
+                    if (isset($_SESSION['id'])) {
 
 
-                        echo '<form action="handlelogout.php" method="post">
-                                            <button type="submit" name="submit">Logout</button>
-                                        </form>';
-//                        Print_r ($_SESSION);
                     }else {
                         echo ' <form action="handlelogout.php" method="post">
                         <button type="submit" name="submit">Logout</button>

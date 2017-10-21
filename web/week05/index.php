@@ -1,7 +1,7 @@
 <?php
 require "dbConnect.php";
 $db = get_db();
-include_once 'header.php';
+include_once "header.php";
 ?>
     <section class="main-container">
     <div class="main-wrapper">
@@ -11,7 +11,7 @@ include_once 'header.php';
             echo "<p>Logged in</p>";
         }
         ?>
-        <p>Free tutorials available for beginers. Advanced content is available for authorized users.</p>
+        <p>Free tutorials available for beginners. Advanced content is available for authorized users.</p>
 
 
 
