@@ -27,12 +27,13 @@ session_start();
 
                     if (isset($_SESSION['id'])) {
 
-
+                        echo "session variables are set.";
+                        echo '<form action="handlelogout.php" method="post">
+                                            <button type="submit" name="submit">Logout</button>
+                                        </form>';
+//                        Print_r ($_SESSION);
                     }else {
-                        echo ' <form action="handlelogout.php" method="post">
-                        <button type="submit" name="submit">Logout</button>
-                    </form>
-                    <form action="handlelogin.php" method="post">
+                        echo '<form action="handlelogin.php" method="post">
                         <input type="text" name="uid" placeholder="Username/email">
                         <input type="password" name="pwd" placeholder="password">
                         <button type="submit" name="submit">Login</button>
