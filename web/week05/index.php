@@ -8,7 +8,7 @@ include_once "header.php";
         <h2>Tennis Tech</h2>
         <?php
         if (isset($_SESSION['id'])) {
-            echo "<p>Welcome, " . $_SESSION['first'] . " " . $_SESSION['Last'] . "</p>";
+            echo "<p>Welcome, " . $_SESSION['first'] . " " . $_SESSION['last'] . "</p>";
         }
         ?>
         <p>Free tutorials available for beginners. Advanced content is available for authorized users.</p>
