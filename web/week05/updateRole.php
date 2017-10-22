@@ -3,6 +3,11 @@
 require "dbConnect.php";
 $db = get_db();
 
+if (!isset($_SESSION['uid'])){
+    header("Location: index.php");
+
+}
+
 if (isset($_POST['submit'])) {
 
     $roleid = $_POST['roleid'];

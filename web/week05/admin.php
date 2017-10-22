@@ -12,7 +12,7 @@ include_once 'header.php';
         $statement->execute();
         // Go through each result
 
-
+echo "<div>";
 
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
@@ -44,7 +44,7 @@ include_once 'header.php';
 
 
         }
-
+echo "</div>";
 
 
         ?>
