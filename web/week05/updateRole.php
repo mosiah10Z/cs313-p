@@ -13,8 +13,8 @@ if (isset($_POST['submit'])) {
 
 
 
-    $query->bindParam(':userprimary', $userprimary, PDO::PARAM_INT);
-    $query->bindParam(':roleid', $roleid, PDO::PARAM_INT);
+    $query->bindParam(':userprimary', $userprimary);
+    $query->bindParam(':roleid', $roleid);
     $query->execute();
 
 
