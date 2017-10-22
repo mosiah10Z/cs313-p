@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $roleid = $_POST['roleid'];
     $userprimary = $_POST['userprimary'];
 
-    $sql = "update public.user set role_id = :roleid where id = :userprimary)";
+    $sql = "update public.user set role_id = :roleid where id = :userprimary";
     $query = $db->prepare($sql);
 
 
