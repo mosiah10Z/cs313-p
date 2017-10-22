@@ -2,6 +2,10 @@
 require "dbConnect.php";
 $db = get_db();
 include_once 'header.php';
+
+if ($_SESSION['roleid'] > 1) {
+    header("Location: index.php");
+}
 ?>
 <section class="main-container">
     <div class="main-wrapper">

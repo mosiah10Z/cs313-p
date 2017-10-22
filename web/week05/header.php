@@ -22,7 +22,7 @@ session_start();
                         <li><a href="advanced.php">Advanced</a></li>
                     </ul>
                     <?php
-                    if (isset($_SESSION['roleid'])) {
+                    if ($_SESSION['roleid'] == 1) {
                         echo '<li><a href="admin.php">Admin</a></li>';
                     }
                     ?>
