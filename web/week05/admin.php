@@ -33,12 +33,12 @@ include_once 'header.php';
 
 
 
-            echo '<form action="updateRole.php" method="post">
-        <input type="hidden" name="userprimary" value=$userprimary>
-        <input type="radio" name="roleid" value=1>Super<br>
+            echo '<form action="updateRole.php" method="post">';
+        echo '<input type="hidden" name="userprimary" value=' . $userprimary . '>';
+        echo '<input type="radio" name="roleid" value=1>Super<br>
         <input type="radio" name="roleid" value=2>Advanced<br>
         <input type="radio" name="roleid" value=3>Beginner<br>
-        <button type="submit" name="submit">Sign up</button>
+        <button type="submit" name="submit">Update</button>
         </form>';
             echo "<br><br>";
 
