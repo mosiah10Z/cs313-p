@@ -40,6 +40,7 @@ if (isset($_POST['submit'])) {
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['first'] = $row['first_name'];
                     $_SESSION['last'] = $row['last_name'];
+                    $_SESSION['roleid'] = $row['role_id'];
 
                     $_SESSION['uid'] = $row['username'];
                     header("Location: index.php?login=success");

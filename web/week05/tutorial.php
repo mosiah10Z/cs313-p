@@ -11,10 +11,10 @@ include_once 'header.php';
 
             <?php
             $statement = $db->prepare("SELECT *
-  FROM tutorial AS t1
-  JOIN public.user AS t2
-  ON t1.user_id = t2.id");
-$statement->execute();
+            FROM tutorial AS t1
+            JOIN public.user AS t2
+            ON t1.user_id = t2.id");
+            $statement->execute();
 // Go through each result
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {

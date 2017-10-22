@@ -21,13 +21,19 @@ session_start();
                     <ul>
                         <li><a href="advanced.php">Advanced</a></li>
                     </ul>
+                    <?php
+                    if (isset($_SESSION['roleid'])) {
+                        echo '<li><a href="admin.php">Admin</a></li>';
+                    }
+                    ?>
+
                 </ul>
                 <div class="nav-login">
                     <?php
 
                     if (isset($_SESSION['id'])) {
 
-                        echo "session variables are set.";
+
                         echo '<form action="handlelogout.php" method="post">
                                             <button type="submit" name="submit">Logout</button>
                                         </form>';
