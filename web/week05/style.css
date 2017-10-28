@@ -329,3 +329,26 @@ header .nav-login a {
     padding-top: 30px;
 }
 
+#banner {
+    background-image: url("images/tennistech-01.png");
+    background-size: cover;
+    background-position: bottom center;
+    height: 482px;
+    width: 100%;
+}
+
+#bannerTut {
+    background-image: url("images/tutorials-01.png");
+    background-size: cover;
+    background-position: bottom center;
+    height: 482px;
+    width: 100%;
+}
+
+#bannerAd {
+    background-image: url("images/advanced-01.png");
+    background-size: cover;
+    background-position: bottom center;
+    height: 482px;
+    width: 100%;
+}

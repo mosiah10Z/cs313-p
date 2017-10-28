@@ -4,6 +4,13 @@ require "dbConnect.php";
 $db = get_db();
 include_once 'header.php';
 ?>
+    <div id="bannerTut">
+        <div>
+
+
+        </div>
+
+    </div>
     <section class="main-container">
         <div class="main-wrapper">
             <h2>Beginner</h2>

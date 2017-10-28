@@ -2,6 +2,13 @@
 
 include_once 'header.php';
 ?>
+    <div id="bannerAd">
+        <div>
+
+
+        </div>
+
+    </div>
     <section class="main-container">
         <div class="main-wrapper">
             <h2>Advanced</h2>
