@@ -12,13 +12,13 @@ include_once "header.php";
     </div>
     <section class="main-container">
         <div class="main-wrapper">
-            <h2>Tennis Tech</h2>
+            <h2>Free tutorials available for beginners.<br> Advanced content is available for authorized users.<br></h2>
             <?php
         if (isset($_SESSION['id'])) {
             echo "<p>Welcome, " . $_SESSION['first'] . " " . $_SESSION['last'] . "</p>";
         }
         ?>
-                <p>Free tutorials available for beginners. Advanced content is available for authorized users.<br><br><br><br></p>
+                <p></p>
 
 
                 <div align="center">
