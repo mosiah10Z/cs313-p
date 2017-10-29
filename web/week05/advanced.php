@@ -1,7 +1,7 @@
 <?php
 
 include_once 'header.php';
-if ($_SESSION['roleid'] != 1 || $_SESSION['roleid'] != 2) {
+if ($_SESSION['roleid'] == 3) {
     header("Location: index.php");
 }
 ?>
