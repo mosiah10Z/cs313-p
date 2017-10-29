@@ -190,7 +190,7 @@ a {
 }
 
 body {
-    background-color: lightgray;
+    background-color: whitesmoke;
 }
 
 header nav {
@@ -359,4 +359,8 @@ header .nav-login a {
     text-align: center;
     background-color: lightblue;
     margin-top: 20px;
+}
+
+iframe {
+    padding: 30px 30px;
 }

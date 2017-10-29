@@ -19,12 +19,12 @@ session_start();
                     <ul>
                         <li><a href="tutorial.php">Tutorial</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="advanced.php">Advanced</a></li>
-                    </ul>
+
+
                     <?php
                     if ($_SESSION['roleid'] == 1) {
                         echo '<li><a href="admin.php">Admin</a></li>';
+                        echo '<li><a href="advanced.php">Advanced</a></li>';
                     }
                     ?>
 
