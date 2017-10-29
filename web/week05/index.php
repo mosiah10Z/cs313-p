@@ -19,8 +19,12 @@ include_once "header.php";
         }
         ?>
                 <p>Free tutorials available for beginners. Advanced content is available for authorized users.</p>
-                <iframe width="420" height="345" src="https://www.youtube.com/embed/x-xGDdYdCA8">
+
+
+                <div align="center">
+                    <iframe width="420" height="345" src="https://www.youtube.com/embed/x-xGDdYdCA8">
         </iframe>
+                </div>
 
 
 
