@@ -3,15 +3,15 @@ require "dbConnect.php";
 $db = get_db();
 include_once 'header.php';
 
-if ($_SESSION['roleid'] > 1) {
+if ($_SESSION['roleid'] == null) {
     header("Location: index.php");
 }
 ?>
-<section class="main-container">
-    <div class="main-wrapper">
-        <h2>Admin</h2>
+    <section class="main-container">
+        <div class="main-wrapper">
+            <h2>Admin</h2>
 
-        <?php
+            <?php
         $statement = $db->prepare("SELECT * FROM public.user");
         $statement->execute();
         // Go through each result
@@ -55,12 +55,9 @@ echo "</div>";
 
 
 
+        </div>
+    </section>
+
+    <div>
+
     </div>
-</section>
-
-<div>
-
-</div>
-
-
-
