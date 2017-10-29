@@ -28,12 +28,15 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	// The variable "row" now holds the complete record for that
 	// row, and we can access the different values based on their
 	// name
+    
+    echo '<div class="myDIV">';
 	echo '<p>';
 	
 	echo '<strong>' . $row['title'] . '</strong> by ' . $row['first_name'] . '<br>';
     
     echo '<br>' . $row['tutorial_text'];
 	echo '</p>';
+    echo '</div>';
 }
 ?>
 

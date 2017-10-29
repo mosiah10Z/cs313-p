@@ -352,3 +352,11 @@ header .nav-login a {
     height: 482px;
     width: 100%;
 }
+
+.myDIV {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}

@@ -18,7 +18,7 @@ include_once "header.php";
             echo "<p>Welcome, " . $_SESSION['first'] . " " . $_SESSION['last'] . "</p>";
         }
         ?>
-                <p>Free tutorials available for beginners. Advanced content is available for authorized users.</p>
+                <p>Free tutorials available for beginners. Advanced content is available for authorized users.<br><br><br><br></p>
 
 
                 <div align="center">
