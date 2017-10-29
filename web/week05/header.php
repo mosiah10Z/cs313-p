@@ -22,9 +22,13 @@ session_start();
 
 
                     <?php
+                    if ($_SESSION['roleid'] == 2 || $_SESSION['roleid'] == 1 ) {
+                        
+                        echo '<li><a href="advanced.php">Advanced</a></li>';
+                    }
                     if ($_SESSION['roleid'] == 1) {
                         echo '<li><a href="admin.php">Admin</a></li>';
-                        echo '<li><a href="advanced.php">Advanced</a></li>';
+                        
                     }
                     ?>
 
