@@ -45,7 +45,7 @@ session_start();
 //                        Print_r ($_SESSION);
                     }else {
                         echo '<form action="handlelogin.php" method="post">
-                        <input type="text" name="uid" placeholder="Username/email">
+                        <input type="text" name="uid" placeholder="Username">
                         <input type="password" name="pwd" placeholder="password">
                         <button type="submit" name="submit">Login</button>
                     </form>

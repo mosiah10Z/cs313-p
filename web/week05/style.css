@@ -360,3 +360,7 @@ header .nav-login a {
     background-color: lightblue;
     margin-top: 20px;
 }
+
+iframe {
+    padding: 30px 30px;
+}
